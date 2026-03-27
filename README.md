@@ -1,6 +1,6 @@
 # beav3r-scripts
 
-Minimal Node.js quickstart for the Beav3r SDK with environment-based configuration.
+Minimal Node.js quickstart for the Beav3r SDK.
 
 Reference docs: https://docs.beav3r.ai/sdk/run-your-first-script
 
@@ -31,11 +31,11 @@ Reference docs: https://docs.beav3r.ai/sdk/run-your-first-script
 4. Run the script:
 
    ```bash
-   node --env-file=.env beav3r-quickstart.mjs
+   npm start
    ```
 
 ## Notes
 
 - `.env` is ignored by git and should not be committed.
-- The script exits early if `BEAV3R_API_KEY` is missing.
+- The script loads `.env` with `dotenv` and exits early if `BEAV3R_API_KEY` is missing.
 - You can override `BEAV3R_BASE_URL`, `BEAV3R_AGENT_ID`, and `BEAV3R_DEFAULT_EXPIRY_SECONDS` in `.env` if needed.

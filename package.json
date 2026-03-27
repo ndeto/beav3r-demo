@@ -5,12 +5,13 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "start": "node --env-file=.env beav3r-quickstart.mjs"
+    "start": "node beav3r-quickstart.mjs"
   },
   "engines": {
     "node": ">=20"
   },
   "dependencies": {
-    "@beav3r/sdk": "1.3.0-beta.1"
+    "@beav3r/sdk": "1.3.0-beta.1",
+    "dotenv": "^17.3.1"
   }
 }
